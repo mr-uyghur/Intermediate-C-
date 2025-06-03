@@ -3,6 +3,9 @@
 #include <cctype>     // for isdigit()
 #include <sstream>    // for stringstream to parse values
 
+//Author: Ali Halmamat
+//Date: 5/28/2025
+//De Anza CIS 21B 2025 Spring
 // Destructor: deletes all allocated Variable pointers in the list
 VariableListManager::~VariableListManager() {
     for (auto var : variableList) {
@@ -20,12 +23,12 @@ Variable* VariableListManager::findVariable(const std::string& name) {
     return nullptr; // Not found
 }
 
-// Checks if a variable name is valid (must not start with digit)
+// Checks if a variable name is valid 
 bool VariableListManager::isValidName(const std::string& name) const {
     return !isdigit(name[0]);
 }
 
-// Handles assignment: name = value (value can be number or variable name)
+// Handles assignment: name = value 
 void VariableListManager::assignVariable(const std::string& name, const std::string& value) {
     if (!isValidName(name)) {
         std::cout << "Invalid variable name. Cannot start with a digit." << std::endl;

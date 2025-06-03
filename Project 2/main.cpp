@@ -1,6 +1,9 @@
 #include "VariableListManager.h"
 #include <iostream>
 #include <sstream>
+//Author: Ali Halmamat
+//Date: 5/28/2025
+//De Anza CIS 21B 2025 Spring
 
 int main() {
     VariableListManager manager;     // Creates the manager that holds all variables
@@ -18,7 +21,7 @@ int main() {
         } else if (input == "list") {
             manager.printAll(); // Print all variables
         } else if (input.find('=') != std::string::npos) {
-            // Handle variable assignment like: count = 10
+            // Handle variable assignment 
             std::stringstream ss(input);
             std::string name, eq, value;
             ss >> name >> eq >> value;

@@ -1,5 +1,9 @@
 #include "Variable.h"
 
+//Author: Ali Halmamat
+//Date: 5/28/2025
+//De Anza CIS 21B 2025 Spring
+
 // Constructor initializes variable with name and value, marks it as defined
 Variable::Variable(const std::string& varName, int val)
     : name(varName), value(val), isDefined(true) {}

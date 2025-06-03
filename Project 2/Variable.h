@@ -3,15 +3,19 @@
 
 #include <string>
 
+//Author: Ali Halmamat
+//Date: 5/28/2025
+//De Anza CIS 21B 2025 Spring
+
 // Represents a single variable with a name and a value
 class Variable {
 private:
-    std::string name;   // Name of the variable (e.g., "count", "total")
+    std::string name;   // Name of the variable 
     int value;          // Integer value assigned to the variable
     bool isDefined;     // True if a value has been assigned
 
 public:
-    // Constructor that takes name and value — no default constructor allowed
+    // Constructor that takes name and value no default constructor allowed
     Variable(const std::string& varName, int val);
 
     // Getters
